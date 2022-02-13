@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的部落格</title>
+        <link rel="stylesheet" href="reset.css">
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin:0;
+            }
+            .header{
+                display: flex;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.247);
+            }
+            .header .logo{
+                display: inline-block;
+                padding: 8px 5px;
+            }
+            .header img{
+                border-radius:10%;
+                
+            }
+            .header nav{
+                text-align: right;
+                width: 100%;
+                font-size: 0;
+                padding: 0;
+                
+            }
+            .header nav a{
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                line-height: 52px;
+                padding: 0px 30px;
+                
+            }
+            .header nav a:hover{
+                background-color:rgb(238, 131, 104);
+            }
+            .img img{
+                width: 100%;
+            }
+            .wrap{
+                position: relative;  
+                padding: 10px;
+
+            }
+            .wrap ul{
+                display: flex ;
+                
+            }
+            .wrap ul li{
+                margin: auto;
+                
+            }
+
+            .wrap ul a{
+                font-family:Microsoft JhengHei;
+                font-size: 16px;
+                padding: 0 20px;
+                text-decoration: none;
+                
+            }
+            .wrap ul a:hover{
+
+                font-weight: bolder;
+                color:rgb(255, 255, 255);
+                background-color:rgba(209, 19, 19, 0.5);
+            }
+            .about{
+                background-color: antiquewhite ;
+                
+            }
+            .about h3{
+                text-align: center;
+                line-height: 3em;
+                font-size: 32px;
+            }
+            .about img{
+                display:block; 
+                margin:auto;
+            }
+
+            .about p{
+                display:block; 
+                margin:auto;
+                text-align: center;
+                width: 360px;
+                padding: 20px 0;
+                transition: .5s;
+            }
+            .about p:hover{
+                color: crimson;
+            }
+
+            
+            .about2{
+                width: 960px;
+                margin: auto;
+            }
+            .about2 .classA{
+                display: flex;
+            }
+            .about2 .classA .item{
+                
+                width: 300px;
+                padding: 20px;
+
+            }
+            .about2 img{
+                display: flex;
+                border-radius:50%;
+                margin:auto;
+             
+            }
+
+            .about2 h2{
+                text-align: center;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 25px;
+                padding: 5px 0 10px;
+            }
+            .about2 p{
+                text-align: center;
+                font-size: 14px;
+            }
+            .footer{
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                display:block; 
+                background-color:rgba(0, 0, 0, 0.247) ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="logo"><img src="https://picsum.photos/80/40?random=1">
+            </a>
+            <nav class="nav">
+                <a href="#">關於我</a>
+                <a href="#">文章</a>
+                <a href="#">相簿</a>
+                <a href="#">聯絡我</a>
+                <a href="#">留言板</a>
+            </nav>
+        </div>
+        <div class="img">
+            <img src="https://picsum.photos/960/120?random=2">
+        </div>
+        <diV class="wrap">
+            <ul>
+                <li><a href="#">首頁1</a></li>
+                <li><a href="#">首頁2</a></li>
+                <li><a href="#">首頁3</a></li>
+            </ul>
+        </diV>
+        
+        <div class="about">
+            <h3>關於我</h3>
+            <div>
+                <img src="https://picsum.photos/100?random=3" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores molestiae quo aliquam exercitationem, quia magni ipsum totam. Totam, quidem ea.</p>
+                <img src="https://picsum.photos/100?random=4" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores molestiae quo aliquam exercitationem, quia magni ipsum totam. Totam, quidem ea.</p>
+                <img src="https://picsum.photos/100?random=5" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores molestiae quo aliquam exercitationem, quia magni ipsum totam. Totam, quidem ea.</p>
+
+            </div>
+
+        </div>
+        <div class="about2">
+            <div class="classA">
+                <div class="item">
+                    <img src="https://picsum.photos/100?random=6" >
+                    <h2>title</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores molestiae quo aliquam exercitationem, quia magni ipsum totam. Totam, quidem ea.</p>
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/100?random=7" >
+                    <h2>title</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores molestiae quo aliquam exercitationem, quia magni ipsum totam. Totam, quidem ea.</p>
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/100?random=8" >
+                    <h2>title</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores molestiae quo aliquam exercitationem, quia magni ipsum totam. Totam, quidem ea.</p>
+                </div>
+             </div>
+        </div>
+        <div class="footer">@Anna 2022.02.12</div>
+
+    </body>
+</html>
