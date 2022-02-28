@@ -1,0 +1,164 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.universe{
+    height: 100vh;
+    background-image: -o-radial-gradient(#555,#000);
+    background-image: radial-gradient(#555,#000);
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+}
+.stars{
+    background-image: url(../img/stars.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    -webkit-animation: star 2s infinite alternate;
+            animation: star 2s infinite alternate;
+}
+@-webkit-keyframes star{
+    100%{
+        opacity: .4;
+    }
+}
+@keyframes star{
+    100%{
+        opacity: .4;
+    }
+}
+.sun{
+    background-image: -o-radial-gradient(#F5C313,#EC7E08);
+    background-image: radial-gradient(#F5C313,#EC7E08);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 30px #F5C91A;
+            box-shadow: 0 0 30px #F5C91A;
+    -webkit-animation: sun 2s infinite alternate;
+            animation: sun 2s infinite alternate;
+}
+@-webkit-keyframes sun{
+    100%{
+        -webkit-box-shadow:0 0 100px #c9660a;
+                box-shadow:0 0 100px #c9660a;
+    }
+}
+@keyframes sun{
+    100%{
+        -webkit-box-shadow:0 0 100px #c9660a;
+                box-shadow:0 0 100px #c9660a;
+    }
+}
+.earth_orbit{
+    /* border: 2px solid yellow; */
+    width: 70vh;
+    height: 70vh;
+    display:  -ms-grid;
+    display:  grid;
+    place-items: center;
+    border-radius: 50%;
+    
+    position:absolute;
+    top:calc(100vh / 2 -30vh);
+    left:calc(100vw / 2 - 30vh);
+  
+    -webkit-animation: earth 30s infinite linear;
+            animation: earth 30s infinite linear;
+} 
+@-webkit-keyframes earth{
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }
+} 
+@keyframes earth{
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }
+}
+.moon_irdit{
+    /* border: 2px solid yellow; */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+    position: absolute;
+    top:calc(50% - 120px / 2);
+    left:calc(-120px / 2);
+
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: moon 30s infinite linear;
+            animation: moon 30s infinite linear;
+}
+@-webkit-keyframes moon{
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }
+}
+@keyframes moon{
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }
+}
+.earth{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    
+    -webkit-animation: dontspin 30s infinite linear; 
+    
+            animation: dontspin 30s infinite linear;
+}
+@-webkit-keyframes dontspin{
+    100%{
+        -webkit-transform:rotate(-720deg);
+                transform:rotate(-720deg);
+    }
+}
+@keyframes dontspin{
+    100%{
+        -webkit-transform:rotate(-720deg);
+                transform:rotate(-720deg);
+    }
+}
+.earth img{
+    width: 100%;
+    
+}
+.moon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: -o-radial-gradient(#ddd,#888);
+    background-image: radial-gradient(#ddd,#888);
+    position: absolute;
+    left: calc(-30px/2);
+
+    
+}
